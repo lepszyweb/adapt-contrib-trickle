@@ -15,8 +15,8 @@
           "properties": {
             "_completionAttribute": {
               "type": "string",
-              "title": "Completion attribute",
-              "description": "Set which attribute is used to determine completion",
+              "title": "Atrybut ukończenia",
+              "description": "Ustawienie, który atrybut jest używany do określenia ukończenia",
               "default": "_isComplete",
               "enum": [
                 "_isInteractionComplete",

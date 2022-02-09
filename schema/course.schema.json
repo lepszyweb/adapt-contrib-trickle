@@ -18,8 +18,8 @@
               "properties": {
                 "incompleteContent": {
                   "type": "string",
-                  "title": "Incomplete content",
-                  "default": "There is incomplete content above. You must complete this before you can proceed through the course.",
+                  "title": "Nieukończona treść",
+                  "default": "Powyżej znajduje się nieukończona treść. Musisz je uzupełnić przed kontynuacją kursu.",
                   "_adapt": {
                     "translatable": true
                   }

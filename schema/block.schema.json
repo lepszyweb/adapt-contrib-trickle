@@ -10,7 +10,7 @@
       "properties": {
         "_trickle": {
           "type": "object",
-          "title": "Trickle",
+          "title": "Podchwytliwe",
           "default": {},
           "required": [
             "_scrollDuration"
@@ -18,29 +18,29 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Trickle",
+              "title": "Włącz Trickle",
               "default": false
             },
             "_isInherited": {
               "type": "boolean",
-              "title": "Inherit settings from parent article",
+              "title": "Przejęcie ustawień z artykułu nadrzędnego",
               "default": false
             },
             "_autoScroll": {
               "type": "boolean",
-              "title": "Scroll automatically",
+              "title": "Przewiń automatycznie",
               "default": false
             },
             "_scrollDuration": {
               "type": "number",
-              "title": "Scroll duration",
-              "description": "Duration of the scroll animation in milliseconds",
+              "title": "Czas trwania przewijania",
+              "description": "Czas trwania animacji przewijania w milisekundach",
               "default": 500
             },
             "_scrollTo": {
               "type": "string",
-              "title": "Scroll target",
-              "description": "Set how trickle scrolls",
+              "title": "Cel przewijania",
+              "description": "Ustaw przewijanie Trickle",
               "default": "@block +1"
             },
             "_button": {
@@ -50,12 +50,12 @@
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
-                  "title": "Add Trickle button",
+                  "title": "Dodaj przycisk Trickle",
                   "default": true
                 },
                 "_styleBeforeCompletion": {
                   "type": "string",
-                  "title": "Visibility before completion",
+                  "title": "Widoczność przed ukończeniem",
                   "default": "hidden",
                   "enum": [
                     "hidden",
@@ -66,7 +66,7 @@
                 },
                 "_styleAfterClick": {
                   "type": "string",
-                  "title": "Visibility after completion",
+                  "title": "Widoczność po ukończeniu",
                   "default": "hidden",
                   "enum": [
                     "hidden",
@@ -77,108 +77,108 @@
                 },
                 "_isFullWidth": {
                   "type": "boolean",
-                  "title": "Make full width",
+                  "title": "Ustaw pełną szerokość",
                   "default": true
                 },
                 "_autoHide": {
                   "type": "boolean",
-                  "title": "Hide button when no longer in view",
-                  "description": "Hides the button when it scrolls from view; not recommended for use in courses that need to be screenreader compatible",
+                  "title": "Ukryj przycisk, gdy nie jest już widoczny",
+                  "description": "Ukrywa przycisk, gdy jest on przewijany z widoku; nie jest zalecany do stosowania w kursach, które muszą być kompatybilne z czytnikami ekranu",
                   "default": false
                 },
                 "_showEndOfPage": {
                   "type": "boolean",
-                  "title": "Show end of page button",
+                  "title": "Pokaż przycisk końca strony",
                   "default": true
                 },
                 "_className": {
                   "type": "string",
-                  "title": "Custom classes",
+                  "title": "Własne klasy",
                   "default": ""
                 },
                 "_hasIcon": {
                   "type": "boolean",
-                  "title": "Enable icon",
-                  "description": "Displays an icon alongside, or in place of, the Trickle button text. Default icon is a small downwards arrow",
+                  "title": "Włącz ikonę",
+                  "description": "Wyświetla ikonę obok lub zamiast tekstu przycisku Trickle. Domyślną ikoną jest mała strzałka w dół.",
                   "default": false
                 },
                 "text": {
                   "type": "string",
-                  "title": "Default button text",
-                  "default": "Continue",
+                  "title": "Domyślny tekst przycisku",
+                  "default": "Dalej",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "Default button ARIA label",
-                  "default": "Continue",
+                  "title": "Domyślna etykieta ARIA przycisku",
+                  "default": "Dalej",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "startText": {
                   "type": "string",
-                  "title": "First button text",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Begin",
+                  "title": "Tekst pierwszego przycisku",
+                  "description": "Tylko w artykułach, gdy 'Włącz na blokach potomnych' ustawione na true",
+                  "default": "Zacznij",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "startAriaLabel": {
                   "type": "string",
-                  "title": "First button ARIA label",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Begin",
+                  "title": "Etykieta ARIA pierwszego przycisku",
+                  "description": "Tylko w artykułach, gdy 'Włącz na blokach potomnych' ustawione na true",
+                  "default": "Zacznij",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "finalText": {
                   "type": "string",
-                  "title": "Final button text",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Finish",
+                  "title": "Tekst przycisku zakończenia",
+                  "description": "Tylko w artykułach, gdy 'Włącz na blokach potomnych' ustawione na true",
+                  "default": "Zakończ",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "finalAriaLabel": {
                   "type": "string",
-                  "title": "Final button ARIA label",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Finish",
+                  "title": "Końcowa etykieta przycisku ARIA",
+                  "description": "Tylko w artykułach, gdy 'Włącz na blokach potomnych' ustawione na true",
+                  "default": "Zakończ",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "_component": {
                   "type": "string",
-                  "title": "Trickle plugin",
+                  "title": "Wtyczka Trickle",
                   "default": "trickle-button"
                 }
               }
             },
             "_stepLocking": {
               "type": "object",
-              "title": "Step locking",
+              "title": "Blokada stopnia",
               "default": {},
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
-                  "title": "Hide subsequent content",
+                  "title": "Ukryj dalszą treść",
                   "default": true
                 },
                 "_isCompletionRequired": {
                   "type": "boolean",
-                  "title": "Require content to be completed",
+                  "title": "Wymóg uzupełnienia treści",
                   "default": true
                 },
                 "_isLockedOnRevisit": {
                   "type": "boolean",
-                  "title": "Reset state on revisit",
+                  "title": "Zerowaniee stanu przy ponownym odwiedzeniu",
                   "default": false
                 }
               }
